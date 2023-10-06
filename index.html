@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-git常用命令（自用）" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/11/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/" class="article-date">
+  <time class="dt-published" datetime="2018-11-12T02:31:54.000Z" itemprop="datePublished">2018-11-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/11/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/">git常用命令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="git常用命令（自用）"><a href="#git常用命令（自用）" class="headerlink" title="git常用命令（自用）"></a>git常用命令（自用）</h1><h2 id="初次使用"><a href="#初次使用" class="headerlink" title="初次使用"></a>初次使用</h2><ul>
+<li><h4 id="初始化一个git仓库"><a href="#初始化一个git仓库" class="headerlink" title="初始化一个git仓库"></a>初始化一个git仓库</h4> <code>git init</code></li>
+<li><h4 id="保存所有更改"><a href="#保存所有更改" class="headerlink" title="保存所有更改"></a>保存所有更改</h4> <code>git add .</code></li>
+<li><h4 id="保存某文件的更改"><a href="#保存某文件的更改" class="headerlink" title="保存某文件的更改"></a>保存某文件的更改</h4> <code>git add &lt;file&gt;</code></li>
+<li><h4 id="提交以及理由"><a href="#提交以及理由" class="headerlink" title="提交以及理由"></a>提交以及理由</h4> <code>git commit -m &quot;叙述为什么提交&quot;</code></li>
+</ul>
+<h2 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h2><ul>
+<li><h4 id="同步到远程服务器的master分支（比如github）"><a href="#同步到远程服务器的master分支（比如github）" class="headerlink" title="同步到远程服务器的master分支（比如github）"></a>同步到远程服务器的master分支（比如github）</h4> <code>git push -u origin master</code></li>
+<li><h4 id="查看所有分支"><a href="#查看所有分支" class="headerlink" title="查看所有分支"></a>查看所有分支</h4> <code>git branch</code></li>
+<li><h4 id="新建分支"><a href="#新建分支" class="headerlink" title="新建分支"></a>新建分支</h4> <code>git branch &lt;name&gt;</code></li>
+<li><h4 id="切换到name分支"><a href="#切换到name分支" class="headerlink" title="切换到name分支"></a>切换到name分支</h4> <code>git checkout &lt;name&gt;</code></li>
+<li><h4 id="创建并切换到name分支"><a href="#创建并切换到name分支" class="headerlink" title="创建并切换到name分支"></a>创建并切换到name分支</h4> <code>git checkout -b &lt;name&gt;</code></li>
+<li><h4 id="合并name分支到当前分支"><a href="#合并name分支到当前分支" class="headerlink" title="合并name分支到当前分支"></a>合并name分支到当前分支</h4> <code>git merge &lt;name&gt;</code></li>
+<li><h4 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h4> <code>git branch -d &lt;name&gt;</code></li>
+</ul>
+<h2 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h2><ul>
+<li><h4 id="查看当前分支的所有提交"><a href="#查看当前分支的所有提交" class="headerlink" title="查看当前分支的所有提交"></a>查看当前分支的所有提交</h4> <code>git log</code></li>
+<li><h4 id="回到某一版本（commit-id无需写全，至少写前几个字母、数字）"><a href="#回到某一版本（commit-id无需写全，至少写前几个字母、数字）" class="headerlink" title="回到某一版本（commit_id无需写全，至少写前几个字母、数字）"></a>回到某一版本（commit_id无需写全，至少写前几个字母、数字）</h4> <code>git reset --hard &lt;commit_id&gt;</code></li>
+<li><h4 id="回到上一个版本"><a href="#回到上一个版本" class="headerlink" title="回到上一个版本"></a>回到上一个版本</h4> <code>git reset --hard HEAD^</code></li>
+<li><h4 id="回到上上一个版本"><a href="#回到上上一个版本" class="headerlink" title="回到上上一个版本"></a>回到上上一个版本</h4> <code>git reset --hard HEAD^^</code></li>
+<li><h4 id="查看最近操作"><a href="#查看最近操作" class="headerlink" title="查看最近操作"></a>查看最近操作</h4> <code>git reflog</code></li>
+</ul>
+<h2 id="版本号"><a href="#版本号" class="headerlink" title="版本号"></a>版本号</h2><ul>
+<li><h4 id="新建版本号"><a href="#新建版本号" class="headerlink" title="新建版本号"></a>新建版本号</h4> <code>git tag &lt;tagname&gt;</code></li>
+<li><h4 id="创建带说明的版本号"><a href="#创建带说明的版本号" class="headerlink" title="创建带说明的版本号"></a>创建带说明的版本号</h4> <code>git tag -a &lt;tagname&gt; -m &quot; &quot;</code></li>
+<li><h4 id="查看当前所有版本号"><a href="#查看当前所有版本号" class="headerlink" title="查看当前所有版本号"></a>查看当前所有版本号</h4> <code>git tag</code></li>
+<li><h4 id="为某次commit添加版本号"><a href="#为某次commit添加版本号" class="headerlink" title="为某次commit添加版本号"></a>为某次commit添加版本号</h4> <code>git tag &lt;tag&gt;&lt;commit_id&gt;</code></li>
+<li><h4 id="详细查看某一个版本"><a href="#详细查看某一个版本" class="headerlink" title="详细查看某一个版本"></a>详细查看某一个版本</h4> <code>git show &lt;tagname&gt;</code></li>
+</ul>
+<h2 id="搭建Git服务器"><a href="#搭建Git服务器" class="headerlink" title="搭建Git服务器"></a>搭建Git服务器</h2><ul>
+<li><h4 id=""><a href="#" class="headerlink" title=""></a></h4> &#96;&#96;</li>
+<li><h4 id="-1"><a href="#-1" class="headerlink" title=""></a></h4> &#96;&#96;</li>
+<li><h4 id="-2"><a href="#-2" class="headerlink" title=""></a></h4> &#96;&#96;</li>
+<li><h4 id="-3"><a href="#-3" class="headerlink" title=""></a></h4> &#96;&#96;</li>
+<li><h4 id="-4"><a href="#-4" class="headerlink" title=""></a></h4> &#96;&#96;</li>
+<li><h4 id="-5"><a href="#-5" class="headerlink" title=""></a></h4> &#96;&#96;</li>
+</ul>
+<h2 id="添加远程仓库"><a href="#添加远程仓库" class="headerlink" title="添加远程仓库"></a>添加远程仓库</h2><pre><code>详见Github。。。
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/11/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/" data-id="clne3gehg00022sl73zfx0h7j" data-title="git常用命令" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-pyopengl" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/09/25/pyopengl/" class="article-date">
+  <time class="dt-published" datetime="2018-09-25T06:13:46.000Z" itemprop="datePublished">2018-09-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/09/25/pyopengl/">py3.6.5 opengl</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="py3-6-5-opengl"><a href="#py3-6-5-opengl" class="headerlink" title="py3.6.5 opengl"></a>py3.6.5 opengl</h1><h4 id="C-Python36-Lib-site-packages-OpenGL-DLLS"><a href="#C-Python36-Lib-site-packages-OpenGL-DLLS" class="headerlink" title="C:\Python36\Lib\site-packages\OpenGL\DLLS"></a>C:\Python36\Lib\site-packages\OpenGL\DLLS</h4><h4 id="在win10-python3-6-5环境下配置opengl，并显示三维模型"><a href="#在win10-python3-6-5环境下配置opengl，并显示三维模型" class="headerlink" title="在win10+python3.6.5环境下配置opengl，并显示三维模型"></a>在win10+python3.6.5环境下配置opengl，并显示三维模型</h4><pre><code>首先安装opengl:
+
+已经安装python的系统会自动安装pip，所以只需要一句pip命令就可以安装opengl了，命令如下：
+
+
+pip install PyOpenGL PyOpenGL_accelerate	
+然后在python 中import相关功能，运行后会出现错误
+
+OpenGL.error.NullFunctionError: Attempt to call an undefined function glutInit, check for bool(glutInit) before calling
+
+或者：
+
+SyntaxError: multiple statements found while compiling a single statement
+
+缺少相关dll文件
+
+拷到“C:\Python36\Lib\site-packages\OpenGL\DLLS”的目录下就可以了。（我的opengl是这个目录）
+</code></pre>
+<h4 id="然后运行下面的程序，就应该能够显示茶壶模型了。"><a href="#然后运行下面的程序，就应该能够显示茶壶模型了。" class="headerlink" title="然后运行下面的程序，就应该能够显示茶壶模型了。"></a>然后运行下面的程序，就应该能够显示茶壶模型了。</h4><pre><code>from OpenGL.GL import *
+
+from OpenGL.GLU import *
+from OpenGL.GLUT import *
+
+
+def drawFunc():
+    #清楚之前画面
+    glClear(GL_COLOR_BUFFER_BIT)
+    glRotatef(0.1, 0,5,0)   #(角度,x,y,z)
+    glutWireTeapot(0.5)
+    #刷新显示
+    glFlush()
+    
+#使用glut初始化OpenGL
+glutInit()
+#显示模式:GLUT_SINGLE无缓冲直接显示|GLUT_RGBA采用RGB(A非alpha)
+glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA)
+#窗口位置及大小-生成
+glutInitWindowPosition(0,0)
+glutInitWindowSize(400,400)
+glutCreateWindow(b&quot;first&quot;)
+#调用函数绘制图像
+glutDisplayFunc(drawFunc)
+glutIdleFunc(drawFunc)
+#主循环
+glutMainLoop()
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/09/25/pyopengl/" data-id="clne3gehe00012sl7du9rad0d" data-title="py3.6.5 opengl" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-如何自动登录（注销）校园网" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/07/18/%E5%A6%82%E4%BD%95%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95%EF%BC%88%E6%B3%A8%E9%94%80%EF%BC%89%E6%A0%A1%E5%9B%AD%E7%BD%91/" class="article-date">
+  <time class="dt-published" datetime="2018-07-18T02:41:42.000Z" itemprop="datePublished">2018-07-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/07/18/%E5%A6%82%E4%BD%95%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95%EF%BC%88%E6%B3%A8%E9%94%80%EF%BC%89%E6%A0%A1%E5%9B%AD%E7%BD%91/">如何自动登录（注销）校园网</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="如何自动登录（注销）校园网"><a href="#如何自动登录（注销）校园网" class="headerlink" title="如何自动登录（注销）校园网"></a>如何自动登录（注销）校园网</h1><ul>
+<li>wget配合bat脚本</li>
+<li>python</li>
+</ul>
+<h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><ol>
+<li>首先下载 <a target="_blank" rel="noopener" href="https://eternallybored.org/misc/wget/">wget</a>（是一个用来下载的软件）</li>
+<li>然后编写bat脚本，注意放在wget的根目录下（）或者把wget配置到全局变量，代码如下<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget http://172.16.6.3/ --post-data=&quot;DDDDD=123456&amp;upass=789456&amp;v46s=0&amp;v6ip=&amp;f4serip=172.16.6.3&amp;0MKKey=&quot; --delete-after</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+123456是校园网账号<br>789456是密码</li>
+</ol>
+<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><ol>
+<li>代码<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># coding=utf-8</span><br><span class="line">import requests</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 自动登录**大学校园网</span><br><span class="line"></span><br><span class="line">def login():</span><br><span class="line">    newData = &quot;&quot;DDDDD=123456&amp;upass=789456&amp;v46s=0&amp;v6ip=&amp;f4serip=172.16.6.3&amp;0MKKey=&quot;</span><br><span class="line">    response = requests.post(&#x27;http://172.16.6.3&#x27;, data=newData)</span><br><span class="line">    print(response)</span><br><span class="line"># 登录校园网</span><br><span class="line"></span><br><span class="line">def logout():</span><br><span class="line">    requests.get(&quot;http://172.16.6.3/F.htm&quot;)</span><br><span class="line">    print(requests)</span><br><span class="line"># 退出校园网</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    login()</span><br><span class="line">    # logout()</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>运行</li>
+<li>注：login是登录 logout是注销</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/07/18/%E5%A6%82%E4%BD%95%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95%EF%BC%88%E6%B3%A8%E9%94%80%EF%BC%89%E6%A0%A1%E5%9B%AD%E7%BD%91/" data-id="clne3gehl000a2sl736v630m1" data-title="如何自动登录（注销）校园网" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-python_turtle汉化" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/07/03/python_turtle%E6%B1%89%E5%8C%96/" class="article-date">
+  <time class="dt-published" datetime="2018-07-03T07:38:57.000Z" itemprop="datePublished">2018-07-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/07/03/python_turtle%E6%B1%89%E5%8C%96/">python.turtle 汉化</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="python-turtle-汉化"><a href="#python-turtle-汉化" class="headerlink" title="python.turtle 汉化"></a>python.turtle 汉化</h1><h4 id="forward-X-fd-X"><a href="#forward-X-fd-X" class="headerlink" title="forward(X) | fd(X)"></a>forward(X) | fd(X)</h4><pre><code>在正直线方向上画X远的线
+</code></pre>
+<h4 id="backward-X-bk-X-back-X"><a href="#backward-X-bk-X-back-X" class="headerlink" title="backward(X) | bk(X) | back(X)"></a>backward(X) | bk(X) | back(X)</h4><pre><code>在反方向上画X远
+</code></pre>
+<h4 id="right-X-rt-X"><a href="#right-X-rt-X" class="headerlink" title="right(X) | rt(X)"></a>right(X) | rt(X)</h4><pre><code>向右旋转X度
+</code></pre>
+<h4 id="left-X-lt-X"><a href="#left-X-lt-X" class="headerlink" title="left(X) | lt(X)"></a>left(X) | lt(X)</h4><pre><code>向左旋转X度
+</code></pre>
+<h4 id="goto-X-Y-setpos-X-Y-setposition-X-Y"><a href="#goto-X-Y-setpos-X-Y-setposition-X-Y" class="headerlink" title="goto(X,Y) | setpos(X,Y) | setposition(X,Y)"></a>goto(X,Y) | setpos(X,Y) | setposition(X,Y)</h4><pre><code>移动点的位置，不改变方向，如果画笔停止
+依次连线
+</code></pre>
+<h4 id="setx-X"><a href="#setx-X" class="headerlink" title="setx(X)"></a>setx(X)</h4><pre><code>只改变横方向的值
+</code></pre>
+<h4 id="sety-X"><a href="#sety-X" class="headerlink" title="sety(X)"></a>sety(X)</h4><pre><code>只改变竖方向的值
+</code></pre>
+<h4 id="setheading-X-seth-X"><a href="#setheading-X-seth-X" class="headerlink" title="setheading(X) | seth(X)"></a>setheading(X) | seth(X)</h4><pre><code>直接改变当前方向的角度，最大不要超过380
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="center">standard mode</th>
+<th align="center">logo mode</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">0 - east</td>
+<td align="center">0 - north</td>
+</tr>
+<tr>
+<td align="center">90 - north</td>
+<td align="center">90 - east</td>
+</tr>
+<tr>
+<td align="center">180 - west</td>
+<td align="center">180 - south</td>
+</tr>
+<tr>
+<td align="center">270 - south</td>
+<td align="center">270 - west</td>
+</tr>
+</tbody></table>
+<h4 id="home"><a href="#home" class="headerlink" title="home()"></a>home()</h4><pre><code>恢复到初始方向和初始位置
+</code></pre>
+<h4 id="circle-x-y-z"><a href="#circle-x-y-z" class="headerlink" title="circle(x,y,z)"></a>circle(x,y,z)</h4><pre><code>画圈
+X为半径
+y为扇区角度范围
+z为速度，数越大越小
+</code></pre>
+<h4 id="dot-x-y"><a href="#dot-x-y" class="headerlink" title="dot(x,y)"></a>dot(x,y)</h4><pre><code>默认黑色小圆点
+x大小
+y颜色
+</code></pre>
+<h4 id="stamp"><a href="#stamp" class="headerlink" title="stamp()"></a>stamp()</h4><pre><code>标记一个当前位置的方向颜色等，并使之后的方向延续使用
+有返回值
+</code></pre>
+<h4 id="clearstamp-X"><a href="#clearstamp-X" class="headerlink" title="clearstamp(X)"></a>clearstamp(X)</h4><pre><code>消除之前的返回值的标记
+</code></pre>
+<h4 id="clearstamps"><a href="#clearstamps" class="headerlink" title="clearstamps()"></a>clearstamps()</h4><pre><code>消除所有的标记
+</code></pre>
+<h4 id="undo"><a href="#undo" class="headerlink" title="undo()"></a>undo()</h4><pre><code>消除之前的线（原路返回）
+</code></pre>
+<h4 id="speed-x"><a href="#speed-x" class="headerlink" title="speed(x)"></a>speed(x)</h4><ul>
+<li>“fastest”: 0</li>
+<li>“fast”: 10</li>
+<li>“normal”: 6</li>
+<li>“slow”: 3</li>
+<li>“slowest”: 1<br>  设置画线速度<br>  数字越大越快，或者可以使用预设</li>
+</ul>
+<h4 id="position-pos"><a href="#position-pos" class="headerlink" title="position() | pos()"></a>position() | pos()</h4><pre><code>返回一个当前头的坐标值（无参数）
+</code></pre>
+<h4 id="towards"><a href="#towards" class="headerlink" title="towards()"></a>towards()</h4><h4 id="xcor"><a href="#xcor" class="headerlink" title="xcor()"></a>xcor()</h4><h4 id="ycor"><a href="#ycor" class="headerlink" title="ycor()"></a>ycor()</h4><h4 id="heading"><a href="#heading" class="headerlink" title="heading()"></a>heading()</h4><pre><code>返回一个当前的方向值
+</code></pre>
+<h4 id="distance"><a href="#distance" class="headerlink" title="distance()"></a>distance()</h4><h4 id="degrees"><a href="#degrees" class="headerlink" title="degrees()"></a>degrees()</h4><h4 id="radians"><a href="#radians" class="headerlink" title="radians()"></a>radians()</h4><h4 id="pendown-pd-down"><a href="#pendown-pd-down" class="headerlink" title="pendown() | pd() | down()"></a>pendown() | pd() | down()</h4><h4 id="penup-pu-up"><a href="#penup-pu-up" class="headerlink" title="penup() | pu() | up()"></a>penup() | pu() | up()</h4><h4 id="pensize-width"><a href="#pensize-width" class="headerlink" title="pensize() | width()"></a>pensize() | width()</h4><h4 id="pen"><a href="#pen" class="headerlink" title="pen()"></a>pen()</h4><h4 id="isdown"><a href="#isdown" class="headerlink" title="isdown()"></a>isdown()</h4><h4 id="color"><a href="#color" class="headerlink" title="color()"></a>color()</h4><h4 id="pencolor"><a href="#pencolor" class="headerlink" title="pencolor()"></a>pencolor()</h4><h4 id="fillcolor"><a href="#fillcolor" class="headerlink" title="fillcolor()"></a>fillcolor()</h4><h4 id="filling"><a href="#filling" class="headerlink" title="filling()"></a>filling()</h4><h4 id="begin-fill"><a href="#begin-fill" class="headerlink" title="begin_fill()"></a>begin_fill()</h4><h4 id="end-fill"><a href="#end-fill" class="headerlink" title="end_fill()"></a>end_fill()</h4><h4 id="reset"><a href="#reset" class="headerlink" title="reset()"></a>reset()</h4><h4 id="clear"><a href="#clear" class="headerlink" title="clear()"></a>clear()</h4><h4 id="write"><a href="#write" class="headerlink" title="write()"></a>write()</h4><h4 id="showturtle-st"><a href="#showturtle-st" class="headerlink" title="showturtle() | st()"></a>showturtle() | st()</h4><h4 id="hideturtle-ht"><a href="#hideturtle-ht" class="headerlink" title="hideturtle() | ht()"></a>hideturtle() | ht()</h4><h4 id="isvisible"><a href="#isvisible" class="headerlink" title="isvisible()"></a>isvisible()</h4><h4 id="shape"><a href="#shape" class="headerlink" title="shape()"></a>shape()</h4><h4 id="resizemode"><a href="#resizemode" class="headerlink" title="resizemode()"></a>resizemode()</h4><h4 id="shapesize-turtlesize"><a href="#shapesize-turtlesize" class="headerlink" title="shapesize() | turtlesize()"></a>shapesize() | turtlesize()</h4><h4 id="shearfactor"><a href="#shearfactor" class="headerlink" title="shearfactor()"></a>shearfactor()</h4><h4 id="settiltangle"><a href="#settiltangle" class="headerlink" title="settiltangle()"></a>settiltangle()</h4><h4 id="tiltangle"><a href="#tiltangle" class="headerlink" title="tiltangle()"></a>tiltangle()</h4><h4 id="tilt"><a href="#tilt" class="headerlink" title="tilt()"></a>tilt()</h4><h4 id="shapetransform"><a href="#shapetransform" class="headerlink" title="shapetransform()"></a>shapetransform()</h4><h4 id="get-shapepoly"><a href="#get-shapepoly" class="headerlink" title="get_shapepoly()"></a>get_shapepoly()</h4><h4 id="onclick"><a href="#onclick" class="headerlink" title="onclick()"></a>onclick()</h4><h4 id="onrelease"><a href="#onrelease" class="headerlink" title="onrelease()"></a>onrelease()</h4><h4 id="ondrag"><a href="#ondrag" class="headerlink" title="ondrag()"></a>ondrag()</h4><h4 id="begin-poly"><a href="#begin-poly" class="headerlink" title="begin_poly()"></a>begin_poly()</h4><h4 id="end-poly"><a href="#end-poly" class="headerlink" title="end_poly()"></a>end_poly()</h4><h4 id="get-poly"><a href="#get-poly" class="headerlink" title="get_poly()"></a>get_poly()</h4><h4 id="clone"><a href="#clone" class="headerlink" title="clone()"></a>clone()</h4><h4 id="getturtle-getpen"><a href="#getturtle-getpen" class="headerlink" title="getturtle() | getpen()"></a>getturtle() | getpen()</h4><h4 id="getscreen"><a href="#getscreen" class="headerlink" title="getscreen()"></a>getscreen()</h4><h4 id="setundobuffer"><a href="#setundobuffer" class="headerlink" title="setundobuffer()"></a>setundobuffer()</h4><h4 id="undobufferentries"><a href="#undobufferentries" class="headerlink" title="undobufferentries()"></a>undobufferentries()</h4><h4 id="bgcolor"><a href="#bgcolor" class="headerlink" title="bgcolor()"></a>bgcolor()</h4><h4 id="bgpic"><a href="#bgpic" class="headerlink" title="bgpic()"></a>bgpic()</h4><h4 id="clear-clearscreen"><a href="#clear-clearscreen" class="headerlink" title="clear() | clearscreen()"></a>clear() | clearscreen()</h4><h4 id="reset-resetscreen"><a href="#reset-resetscreen" class="headerlink" title="reset() | resetscreen()"></a>reset() | resetscreen()</h4><h4 id="screensize"><a href="#screensize" class="headerlink" title="screensize()"></a>screensize()</h4><h4 id="setworldcoordinates"><a href="#setworldcoordinates" class="headerlink" title="setworldcoordinates()"></a>setworldcoordinates()</h4><h4 id="delay"><a href="#delay" class="headerlink" title="delay()"></a>delay()</h4><h4 id="tracer"><a href="#tracer" class="headerlink" title="tracer()"></a>tracer()</h4><h4 id="update"><a href="#update" class="headerlink" title="update()"></a>update()</h4><h4 id="listen"><a href="#listen" class="headerlink" title="listen()"></a>listen()</h4><h4 id="onkey-onkeyrelease"><a href="#onkey-onkeyrelease" class="headerlink" title="onkey() | onkeyrelease()"></a>onkey() | onkeyrelease()</h4><h4 id="onkeypress"><a href="#onkeypress" class="headerlink" title="onkeypress()"></a>onkeypress()</h4><h4 id="onclick-onscreenclick"><a href="#onclick-onscreenclick" class="headerlink" title="onclick() | onscreenclick()"></a>onclick() | onscreenclick()</h4><h4 id="ontimer"><a href="#ontimer" class="headerlink" title="ontimer()"></a>ontimer()</h4><h4 id="mainloop-done"><a href="#mainloop-done" class="headerlink" title="mainloop() | done()"></a>mainloop() | done()</h4><h4 id="mode"><a href="#mode" class="headerlink" title="mode()"></a>mode()</h4><h4 id="colormode"><a href="#colormode" class="headerlink" title="colormode()"></a>colormode()</h4><h4 id="getcanvas"><a href="#getcanvas" class="headerlink" title="getcanvas()"></a>getcanvas()</h4><h4 id="getshapes"><a href="#getshapes" class="headerlink" title="getshapes()"></a>getshapes()</h4><h4 id="register-shape-addshape"><a href="#register-shape-addshape" class="headerlink" title="register_shape() | addshape()"></a>register_shape() | addshape()</h4><h4 id="turtles"><a href="#turtles" class="headerlink" title="turtles()"></a>turtles()</h4><h4 id="window-height"><a href="#window-height" class="headerlink" title="window_height()"></a>window_height()</h4><h4 id="window-width"><a href="#window-width" class="headerlink" title="window_width()"></a>window_width()</h4><h4 id="textinput"><a href="#textinput" class="headerlink" title="textinput()"></a>textinput()</h4><h4 id="numinput"><a href="#numinput" class="headerlink" title="numinput()"></a>numinput()</h4><h4 id="bye"><a href="#bye" class="headerlink" title="bye()"></a>bye()</h4><h4 id="exitonclick"><a href="#exitonclick" class="headerlink" title="exitonclick()"></a>exitonclick()</h4><h4 id="setup"><a href="#setup" class="headerlink" title="setup()"></a>setup()</h4><h4 id="title"><a href="#title" class="headerlink" title="title()"></a>title()</h4>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/07/03/python_turtle%E6%B1%89%E5%8C%96/" data-id="clne3gehi00042sl7axfodrx7" data-title="python.turtle 汉化" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD/" rel="tag">未完待续</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-在windows-2012-R2上-启用shadowssocks服务" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/04/16/%E5%9C%A8windows-2012-R2%E4%B8%8A-%E5%90%AF%E7%94%A8shadowssocks%E6%9C%8D%E5%8A%A1/" class="article-date">
+  <time class="dt-published" datetime="2018-04-16T11:43:09.000Z" itemprop="datePublished">2018-04-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/04/16/%E5%9C%A8windows-2012-R2%E4%B8%8A-%E5%90%AF%E7%94%A8shadowssocks%E6%9C%8D%E5%8A%A1/">在windows 2012 R2上 启用shadowssocks服务</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="在windows-2012-R2上-启用shadowssocks服务"><a href="#在windows-2012-R2上-启用shadowssocks服务" class="headerlink" title="在windows 2012 R2上 启用shadowssocks服务"></a>在windows 2012 R2上 启用shadowssocks服务</h1><p>Shadowsocks是一个轻量级隧道Socks5代理，可加密网络通道。</p>
+<h2 id="1、下载nodejs"><a href="#1、下载nodejs" class="headerlink" title="1、下载nodejs"></a>1、下载nodejs</h2><pre><code>首先要进入https://nodejs.org/，点击页面上的INSTALL安装相对应的node环境。
+</code></pre>
+<h2 id="2、安装nodejs"><a href="#2、安装nodejs" class="headerlink" title="2、安装nodejs"></a>2、安装nodejs</h2><pre><code>很简单，一路点下一步。
+</code></pre>
+<h2 id="3、安装ShadowSocks"><a href="#3、安装ShadowSocks" class="headerlink" title="3、安装ShadowSocks"></a>3、安装ShadowSocks</h2><pre><code>打开“开始-&gt;所有程序-&gt;Node.js-&gt;Node.js command prompt”，打开nodejs命令端，输入命令：
+npm install -g shadowsocks
+</code></pre>
+<h2 id="4、设置ShadowSocks"><a href="#4、设置ShadowSocks" class="headerlink" title="4、设置ShadowSocks"></a>4、设置ShadowSocks</h2><pre><code>首先找到shadowsocks安装目录，
+也就是下面的这个目录C:\Users\Administrator\AppData\Roaming\npm\node_modules\shadowsocks，
+然后找到config.json文件，编辑一下它。
+
+ &#123; 
+&quot;server&quot;:&quot;你的内网ip&quot;, 
+&quot;server_port&quot;:端口号（一般是443就行）, 
+&quot;local_address&quot;:&quot;127.0.0.1&quot;, 
+&quot;local_port&quot;:1080, 
+&quot;password&quot;:&quot;密码&quot;, 
+&quot;timeout&quot;:600, 
+&quot;method&quot;:&quot;加密算法&quot;
+&#125;
+</code></pre>
+<h2 id="5、运行shadowsocks"><a href="#5、运行shadowsocks" class="headerlink" title="5、运行shadowsocks"></a>5、运行shadowsocks</h2><pre><code>运行服务端 打开Node.js command prompt 在弹出的命令行中输入：	    
+ssserver
+</code></pre>
+<h2 id="6、接下来就是他的网络连接状态"><a href="#6、接下来就是他的网络连接状态" class="headerlink" title="6、接下来就是他的网络连接状态"></a>6、接下来就是他的网络连接状态</h2><p>注意：</p>
+<pre><code>Node.js command prompt不可以关，而且服务开启可能会导致服务器高负载！！
+一切的完成都要在防火墙允许情况下进行（防火墙可关闭）
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/04/16/%E5%9C%A8windows-2012-R2%E4%B8%8A-%E5%90%AF%E7%94%A8shadowssocks%E6%9C%8D%E5%8A%A1/" data-id="clne3gehk00092sl7gp3h4e09" data-title="在windows 2012 R2上 启用shadowssocks服务" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag">服务器</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-关于新建ecs服务器的网页浏览" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/04/16/%E5%85%B3%E4%BA%8E%E6%96%B0%E5%BB%BAecs%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E7%BD%91%E9%A1%B5%E6%B5%8F%E8%A7%88/" class="article-date">
+  <time class="dt-published" datetime="2018-04-16T06:02:43.000Z" itemprop="datePublished">2018-04-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/04/16/%E5%85%B3%E4%BA%8E%E6%96%B0%E5%BB%BAecs%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E7%BD%91%E9%A1%B5%E6%B5%8F%E8%A7%88/">关于新建ecs服务器的网页浏览</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="1-Windows-Server-2012-R2如何浏览网页"><a href="#1-Windows-Server-2012-R2如何浏览网页" class="headerlink" title="1.Windows Server 2012 R2如何浏览网页"></a>1.Windows Server 2012 R2如何浏览网页</h1><h3 id="首先要关闭IE增强的安全配置"><a href="#首先要关闭IE增强的安全配置" class="headerlink" title="首先要关闭IE增强的安全配置"></a>首先要关闭IE增强的安全配置</h3><pre><code>1）打开“服务器管理器”
+2）点击左边的“本地服务器”
+3）在右边找到“IE增强的安全配置”，点击“启用”链接，在弹出的窗口中都设置成“关闭”即可。
+</code></pre>
+<h1 id="2-IE浏览器安装Adobe-Flash-Player"><a href="#2-IE浏览器安装Adobe-Flash-Player" class="headerlink" title="2.IE浏览器安装Adobe Flash Player"></a>2.IE浏览器安装Adobe Flash Player</h1><h3 id="这个要去服务器管理器启用之后要重启"><a href="#这个要去服务器管理器启用之后要重启" class="headerlink" title="这个要去服务器管理器启用之后要重启"></a>这个要去服务器管理器启用之后要重启</h3><pre><code>1.Windows Server 2012 R2，IE 默认是没有安装 Flash Player 的。
+其原因也是因为 Server 2012 R2同样内置了这个特殊的 Flash Player，只是默认没有启用。
+2.启用Flash Player 方法。打开服务器管理器，选择“添加角色和功能”。
+3.打开向导后保持默认，一直点“下一步”，直到功能选择页面，找到“用户界面和基础结构”，勾选“桌面体验”并添加所需功能，完成后续安装。
+4.安装完成后重启电脑。
+</code></pre>
+<h1 id="3-之后就可以用IE浏览器上网了"><a href="#3-之后就可以用IE浏览器上网了" class="headerlink" title="3.之后就可以用IE浏览器上网了"></a>3.之后就可以用IE浏览器上网了</h1><pre><code>。。。
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/04/16/%E5%85%B3%E4%BA%8E%E6%96%B0%E5%BB%BAecs%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E7%BD%91%E9%A1%B5%E6%B5%8F%E8%A7%88/" data-id="clne3gehj00052sl74d5827mz" data-title="关于新建ecs服务器的网页浏览" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag">服务器</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-关于雾霾检测的思考" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/04/13/%E5%85%B3%E4%BA%8E%E9%9B%BE%E9%9C%BE%E6%A3%80%E6%B5%8B%E7%9A%84%E6%80%9D%E8%80%83/" class="article-date">
+  <time class="dt-published" datetime="2018-04-13T10:47:41.000Z" itemprop="datePublished">2018-04-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/04/13/%E5%85%B3%E4%BA%8E%E9%9B%BE%E9%9C%BE%E6%A3%80%E6%B5%8B%E7%9A%84%E6%80%9D%E8%80%83/">关于雾霾检测的思考</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>1.做一个线性的图 而且要成功预测出数据</p>
+<p>2.找出pm2.5与其他变量的关系</p>
+<p>3.找出pm2.5的计算方法</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/04/13/%E5%85%B3%E4%BA%8E%E9%9B%BE%E9%9C%BE%E6%A3%80%E6%B5%8B%E7%9A%84%E6%80%9D%E8%80%83/" data-id="clne3gehj00062sl72oi98152" data-title="关于雾霾检测的思考" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" rel="tag">大数据</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-有关于统计学习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/04/13/%E6%9C%89%E5%85%B3%E4%BA%8E%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/" class="article-date">
+  <time class="dt-published" datetime="2018-04-13T03:24:37.000Z" itemprop="datePublished">2018-04-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/04/13/%E6%9C%89%E5%85%B3%E4%BA%8E%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/">有关于统计学习</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>.# 统计学习 #是关于计算机基于数据构建概率统计模型并运用模型对数据进行预测与分析的一门学科，又称为统计机器学习；</p>
+<p>特点：以计算机为平台；以数据为对象；以方法为中心；以概率论、统计学、信息论以及最优化理论等为理论依托；目的是实现对数据的预测和分析；</p>
+<p>三要素：模型、策略、算法；</p>
+<p>回归和分类区别：当待识别的对象变量是连续的，就是一个回归问题；反之就是一个分类问题</p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>概率模型</p>
+<p>概率模型，给定一个用户的查询串，相对于该串存在一个包含所有相关文档的集合。我们把这样的集合看作是一个理想的结果文档集，在给出理想结果集后，我们能很容易得到结果文档。<br>这样我们可以把查询处理看作是对理想结果文档集属性的处理。问题是我们并不能确切地知道这些属性，我们所知道的是存在索引术语来表示这些属性。由于在查询期间这些属性都是不可见的，这就需要在初始阶段来估计这些属性。这种初始阶段的估计允许我们对首次检索的文档集合返回理想的结果集，并产生一个初步的概率描述。</p>
+<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p>三、统计学习对象及目的</p>
+<p>对象——数据。从数据出发，提取数据特征，抽象数据模型，发现数据知识，再回到对数据的分析及预测。<br>目的——对已有数据进行预测与分析（通过构建概率统计模型实现），来实现对未知数据进行预测与分析。</p>
+<p>一、统计学习<br>统计学习是关于计算机基于数据构建概率统计模型并运用模型对数据进行预测与分析的学科。又称统计机器习（statistical machine learning）。</p>
+<p>四、统计学习方法实现步骤</p>
+<p>1、得到一个有限的训练数据集合</p>
+<p>2、确定包含所有可能的模型的假设空间，及学习模型的集合</p>
+<p>3、确定模型选择的准则，即学习策略</p>
+<p>4、实现求解最优模型的算法，即学习算法</p>
+<p>5、通过学习方法选择最优模型</p>
+<p>6、利用学习的最优模型对新数据进行预测或分析</p>
+<h2 id="4"><a href="#4" class="headerlink" title="4"></a>4</h2><p>机器学习</p>
+<p>“傍晚小街路面上沁出微雨后的湿润，和煦的西风吹来，抬头看看天边的晚霞，嗯明天又是一个好天气。走到水果摊旁，挑了个根蒂蜷缩、敲起来声音浊响的青绿西瓜，一边满心期待着皮薄肉厚瓤甜的爽落感，一边愉快地想着，这学期狠下了工夫，基础概念弄得很清楚，算法作业也是信手拈来，这门课成绩一定差不了!”</p>
+<p>由经验可得：</p>
+<p>(1)由微湿路面、感到和风，看到晚霞，可知明天是好天；</p>
+<p>(2)由色泽青绿、根蒂蜷缩、敲声浊响，可知是好瓜；       </p>
+<p>(3)由下了工夫、弄清概念、做好作业、可知会取得好成绩.  </p>
+<p>以上经验由人为完成，如果考虑让机器来完成，即是机器学习。机器学习研究关于计算机从数据中产生“模型”的算法，也就是“学习算法”。</p>
+<p>现在让我们回到“统计学习方法实现步骤”:</p>
+<p>(1)得到一堆有限数目的瓜用于训练；</p>
+<p>(2)确定假设空间，这里仅有好瓜坏瓜；  </p>
+<p>(3)确定好瓜坏瓜的判别准则，即什么样的瓜才是好瓜；  </p>
+<p>(4)设计从输入到输出的算法：y&#x3D;f(x)(注意这里包含多个f(x))；  </p>
+<p>(5)确定最优f(x);  </p>
+<p>(6)用上一步选择的f(x)对新数据作预测分析</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/04/13/%E6%9C%89%E5%85%B3%E4%BA%8E%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/" data-id="clne3gehl000c2sl7g66icgws" data-title="有关于统计学习" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" rel="tag">大数据</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-统计模式识别" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/04/13/%E7%BB%9F%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB/" class="article-date">
+  <time class="dt-published" datetime="2018-04-13T02:56:24.000Z" itemprop="datePublished">2018-04-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/04/13/%E7%BB%9F%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB/">统计模式识别</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="2018-04-13"><a href="#2018-04-13" class="headerlink" title="2018-04-13"></a>2018-04-13</h1><h2 id="统计模式识别"><a href="#统计模式识别" class="headerlink" title="统计模式识别"></a>统计模式识别</h2><p>它是彻底理解各种模式识别过程的基础</p>
+<pre><code>在给定一幅含有多个物体的数字图像的条件下，模式识别过程由三个上要阶段组成。
+第一个阶段称为图像分割或物体分离阶段。在该阶段中检测出各个物体，并把它们的图像和其余景物分离。
+第二个阶段称为特征抽取阶段。在该阶段中对物体进行度氧。一个度量是指一个物体某个可度量性质的度量值，而特征是一个或多个度量的函数。
+计算特征是为了对物体的一些重要特征进行定量估计。特征抽取过程产生了一组特征 ，把它们组合在一起 ，就形成了特征向量。
+这种被大大减少了的信息（与原始图像相比）代表了后续分类决策必须依靠的全部知识。
+引进一个 维空间的概念是很有益的，这个空间包含了所有可能的 维特征向量。
+因此任意一个特定物体都对应于特征空间中的一点。
+第三个阶段是分类。它的输出仅仅是一种决策，确定每个物体应该归属的类别。每个物体被识别为某一特定类型，它是通过一个分类过程加以实现的。
+每个物体被指定属于若干预先定义好的组（类）中的某一个组、这些组代表了预期存在于图像中物体的所有可能类别。如果把指派物体归到一个不正确的类，
+就产生一个分类错误。错分类发生的概率称为误判率。分类只以特征向量为依据。
+</code></pre>
+<p>一、模式识别的一个例子</p>
+<p>　　统计模式识别的基本概念可以用、一个例子来很好地说明。假定我们想实现一个对在传送带上传送的水果进行分类的系统。实际的分类由一个如下图所示的活动的挡板来实现、当挡板降下时将各个水果拨出传送带，并分别落入相应的运输箱里。我们假定待分类的水果是樱桃、苹果、柠檬和葡萄。我们需要一个图像处理系统，它能够观察移动中的水果，对它们进行分类，井能够及时地降下相应的挡板以实现水果的正确装箱。</p>
+<p>图 8-2-2　水果分类系统</p>
+<p>　　我们可以在传送带上方安装一个数字摄像机井在计算机里实现分类决策。对这个例子来说，我们测量每个水果的两个特点；直径和颜色。计算机程序处理每幅数字化图像并且计算水果的直径（单位毫米）和一个表示颜色的参数。</p>
+<p>　　假定我们使用彩色摄像机，程序计算每个物体在红、绿、蓝通道的亮度。于是，我们得到一个特征（例如：红一绿亮度比），对黄色水果取小值，红色水果取大值，我们把这个参数称为红色程度。</p>
+<p>　　下图所示是由直径和红色程度这两个参数定义的２维特征空间以及４种水果中每一种应呈现的聚类现象。通过特征空间中确定合适的决策分界线，我们把空间划分成若干区域，每个区域代表一个类。这样，我们就建立了一个分类规则。</p>
+<p>图 8-2-3　特征空间</p>
+<p>　　任一个水果的属性在进人摄像机视野范围时被测量，它的特征对应于２维特征空间中的某一点。根据这个点在特征空间里的位置，该水果被指定为四类中的一类。分类决策一旦确定，机械装置降下挡板，把水果拨人恰当的包装箱中。</p>
+<p>　　虽然上述系统在水果包装工业中还没被广泛采用，但它起到了说明统计模式识别的作用。在下两章中统计值在系统的设计和操作中的作用会说明得更清楚。但到目前为止，这一点是很清楚的，即每类水果在特征空间里产生了一个概率密度函数分布PDF。而决策分界线可以通过这些PDF的相互作用，按避免误分类或最大限度减少误分类的原则加以确定。 </p>
+<p>　　二、模式识别系统的统计</p>
+<p>　　一个模式识别系统的设计通常由以下的5个步骤的方式实现：物体检测器设计，特征选择，分类器设计，分类器训练和性能评估。</p>
+<p>　　1.物体检测器设计，作用是选择能够将图像中各个物体分离开的景物分割算法。</p>
+<p>　　2.特征选择，作用是确定能够最好地辨别物体类型的物体性质以及如何度量这些性质的方法。</p>
+<p>　　3.分类器设计，作用是建立分类算法的数学基础并选择所使用的分类器的结构类型。</p>
+<p>　　4.分类器训练 ，作用是确定分类器中各种可调整的参数 （决策界限等）使之适应被分类的物体。</p>
+<p>　　5.性能评估，作用是估计各种可能的错分类率的预期值。</p>
+<p>　　物体检测器是一个在复杂景物中分类出各个物体图像的算法。这种分离物体的过程称为图像分割或景物分割，是本章讨论的话题。特征选择确定物体的哪些属性（尺寸、形状等）需要计算，以便能够用它最好地区别各种物体。分类器设计为分类过程确定数学基础。分类器本身的各种可调参数（决策阈值等）在分类器训练阶段确定。除此之外通常还要求估计出在使用该系统时分类错误率的期望值，因此增设了性能评估这一步骤。</p>
+<pre><code>思路：大的模型由若干小的模型（决策树模型）组成，或者说是一部分
+</code></pre>
+<h4 id="来源："><a href="#来源：" class="headerlink" title="来源："></a>来源：</h4><p>[1] 统计模式识别[-&gt;][kk]<br>[kk]:<a target="_blank" rel="noopener" href="https://blog.csdn.net/byxdaz/article/details/603220">https://blog.csdn.net/byxdaz/article/details/603220</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/04/13/%E7%BB%9F%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB/" data-id="clne3gehm000e2sl71v121r9x" data-title="统计模式识别" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" rel="tag">大数据</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-这里是黄黄君的小站" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/01/06/%E8%BF%99%E9%87%8C%E6%98%AF%E9%BB%84%E9%BB%84%E5%90%9B%E7%9A%84%E5%B0%8F%E7%AB%99/" class="article-date">
+  <time class="dt-published" datetime="2018-01-06T03:19:53.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/01/06/%E8%BF%99%E9%87%8C%E6%98%AF%E9%BB%84%E9%BB%84%E5%90%9B%E7%9A%84%E5%B0%8F%E7%AB%99/">欢迎你~来访者</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="小站还在建设中"><a href="#小站还在建设中" class="headerlink" title="小站还在建设中~~"></a>小站还在建设中~~</h3><pre><code>请找个地方随便坐
+开心。
+Bling~Bling~ 嘻嘻
+</code></pre>
+<h3 id="要加油啊！！"><a href="#要加油啊！！" class="headerlink" title="要加油啊！！"></a>要加油啊！！</h3><p><img src="https://i.imgur.com/4h23Ati.jpg"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/01/06/%E8%BF%99%E9%87%8C%E6%98%AF%E9%BB%84%E9%BB%84%E5%90%9B%E7%9A%84%E5%B0%8F%E7%AB%99/" data-id="clne3gehm000h2sl70qx3e512" data-title="欢迎你~来访者" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" rel="tag">大数据</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag">服务器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD/" rel="tag">未完待续</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" style="font-size: 20px;">大数据</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 15px;">服务器</a> <a href="/tags/%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD/" style="font-size: 10px;">未完待续</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/11/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/">git常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/25/pyopengl/">py3.6.5 opengl</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/18/%E5%A6%82%E4%BD%95%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95%EF%BC%88%E6%B3%A8%E9%94%80%EF%BC%89%E6%A0%A1%E5%9B%AD%E7%BD%91/">如何自动登录（注销）校园网</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/03/python_turtle%E6%B1%89%E5%8C%96/">python.turtle 汉化</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/16/%E5%9C%A8windows-2012-R2%E4%B8%8A-%E5%90%AF%E7%94%A8shadowssocks%E6%9C%8D%E5%8A%A1/">在windows 2012 R2上 启用shadowssocks服务</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

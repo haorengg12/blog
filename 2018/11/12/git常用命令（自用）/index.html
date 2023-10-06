@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>git常用命令 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="git常用命令（自用）初次使用 初始化一个git仓库 git init 保存所有更改 git add . 保存某文件的更改 git add &lt;file&gt; 提交以及理由 git commit -m &quot;叙述为什么提交&quot;  分支操作 同步到远程服务器的master分支（比如github） git push -u origin master 查看所有分支 git branc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git常用命令">
+<meta property="og:url" content="http://example.com/2018/11/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="git常用命令（自用）初次使用 初始化一个git仓库 git init 保存所有更改 git add . 保存某文件的更改 git add &lt;file&gt; 提交以及理由 git commit -m &quot;叙述为什么提交&quot;  分支操作 同步到远程服务器的master分支（比如github） git push -u origin master 查看所有分支 git branc">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-11-12T02:31:54.000Z">
+<meta property="article:modified_time" content="2018-11-12T08:05:38.015Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-git常用命令（自用）" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/11/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/" class="article-date">
+  <time class="dt-published" datetime="2018-11-12T02:31:54.000Z" itemprop="datePublished">2018-11-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      git常用命令
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="git常用命令（自用）"><a href="#git常用命令（自用）" class="headerlink" title="git常用命令（自用）"></a>git常用命令（自用）</h1><h2 id="初次使用"><a href="#初次使用" class="headerlink" title="初次使用"></a>初次使用</h2><ul>
+<li><h4 id="初始化一个git仓库"><a href="#初始化一个git仓库" class="headerlink" title="初始化一个git仓库"></a>初始化一个git仓库</h4> <code>git init</code></li>
+<li><h4 id="保存所有更改"><a href="#保存所有更改" class="headerlink" title="保存所有更改"></a>保存所有更改</h4> <code>git add .</code></li>
+<li><h4 id="保存某文件的更改"><a href="#保存某文件的更改" class="headerlink" title="保存某文件的更改"></a>保存某文件的更改</h4> <code>git add &lt;file&gt;</code></li>
+<li><h4 id="提交以及理由"><a href="#提交以及理由" class="headerlink" title="提交以及理由"></a>提交以及理由</h4> <code>git commit -m &quot;叙述为什么提交&quot;</code></li>
+</ul>
+<h2 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h2><ul>
+<li><h4 id="同步到远程服务器的master分支（比如github）"><a href="#同步到远程服务器的master分支（比如github）" class="headerlink" title="同步到远程服务器的master分支（比如github）"></a>同步到远程服务器的master分支（比如github）</h4> <code>git push -u origin master</code></li>
+<li><h4 id="查看所有分支"><a href="#查看所有分支" class="headerlink" title="查看所有分支"></a>查看所有分支</h4> <code>git branch</code></li>
+<li><h4 id="新建分支"><a href="#新建分支" class="headerlink" title="新建分支"></a>新建分支</h4> <code>git branch &lt;name&gt;</code></li>
+<li><h4 id="切换到name分支"><a href="#切换到name分支" class="headerlink" title="切换到name分支"></a>切换到name分支</h4> <code>git checkout &lt;name&gt;</code></li>
+<li><h4 id="创建并切换到name分支"><a href="#创建并切换到name分支" class="headerlink" title="创建并切换到name分支"></a>创建并切换到name分支</h4> <code>git checkout -b &lt;name&gt;</code></li>
+<li><h4 id="合并name分支到当前分支"><a href="#合并name分支到当前分支" class="headerlink" title="合并name分支到当前分支"></a>合并name分支到当前分支</h4> <code>git merge &lt;name&gt;</code></li>
+<li><h4 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h4> <code>git branch -d &lt;name&gt;</code></li>
+</ul>
+<h2 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h2><ul>
+<li><h4 id="查看当前分支的所有提交"><a href="#查看当前分支的所有提交" class="headerlink" title="查看当前分支的所有提交"></a>查看当前分支的所有提交</h4> <code>git log</code></li>
+<li><h4 id="回到某一版本（commit-id无需写全，至少写前几个字母、数字）"><a href="#回到某一版本（commit-id无需写全，至少写前几个字母、数字）" class="headerlink" title="回到某一版本（commit_id无需写全，至少写前几个字母、数字）"></a>回到某一版本（commit_id无需写全，至少写前几个字母、数字）</h4> <code>git reset --hard &lt;commit_id&gt;</code></li>
+<li><h4 id="回到上一个版本"><a href="#回到上一个版本" class="headerlink" title="回到上一个版本"></a>回到上一个版本</h4> <code>git reset --hard HEAD^</code></li>
+<li><h4 id="回到上上一个版本"><a href="#回到上上一个版本" class="headerlink" title="回到上上一个版本"></a>回到上上一个版本</h4> <code>git reset --hard HEAD^^</code></li>
+<li><h4 id="查看最近操作"><a href="#查看最近操作" class="headerlink" title="查看最近操作"></a>查看最近操作</h4> <code>git reflog</code></li>
+</ul>
+<h2 id="版本号"><a href="#版本号" class="headerlink" title="版本号"></a>版本号</h2><ul>
+<li><h4 id="新建版本号"><a href="#新建版本号" class="headerlink" title="新建版本号"></a>新建版本号</h4> <code>git tag &lt;tagname&gt;</code></li>
+<li><h4 id="创建带说明的版本号"><a href="#创建带说明的版本号" class="headerlink" title="创建带说明的版本号"></a>创建带说明的版本号</h4> <code>git tag -a &lt;tagname&gt; -m &quot; &quot;</code></li>
+<li><h4 id="查看当前所有版本号"><a href="#查看当前所有版本号" class="headerlink" title="查看当前所有版本号"></a>查看当前所有版本号</h4> <code>git tag</code></li>
+<li><h4 id="为某次commit添加版本号"><a href="#为某次commit添加版本号" class="headerlink" title="为某次commit添加版本号"></a>为某次commit添加版本号</h4> <code>git tag &lt;tag&gt;&lt;commit_id&gt;</code></li>
+<li><h4 id="详细查看某一个版本"><a href="#详细查看某一个版本" class="headerlink" title="详细查看某一个版本"></a>详细查看某一个版本</h4> <code>git show &lt;tagname&gt;</code></li>
+</ul>
+<h2 id="搭建Git服务器"><a href="#搭建Git服务器" class="headerlink" title="搭建Git服务器"></a>搭建Git服务器</h2><ul>
+<li><h4 id=""><a href="#" class="headerlink" title=""></a></h4> &#96;&#96;</li>
+<li><h4 id="-1"><a href="#-1" class="headerlink" title=""></a></h4> &#96;&#96;</li>
+<li><h4 id="-2"><a href="#-2" class="headerlink" title=""></a></h4> &#96;&#96;</li>
+<li><h4 id="-3"><a href="#-3" class="headerlink" title=""></a></h4> &#96;&#96;</li>
+<li><h4 id="-4"><a href="#-4" class="headerlink" title=""></a></h4> &#96;&#96;</li>
+<li><h4 id="-5"><a href="#-5" class="headerlink" title=""></a></h4> &#96;&#96;</li>
+</ul>
+<h2 id="添加远程仓库"><a href="#添加远程仓库" class="headerlink" title="添加远程仓库"></a>添加远程仓库</h2><pre><code>详见Github。。。
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2018/11/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/" data-id="clne3gehg00022sl73zfx0h7j" data-title="git常用命令" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/09/25/pyopengl/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">py3.6.5 opengl</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" rel="tag">大数据</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag">服务器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD/" rel="tag">未完待续</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" style="font-size: 20px;">大数据</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 15px;">服务器</a> <a href="/tags/%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD/" style="font-size: 10px;">未完待续</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/11/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/">git常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/25/pyopengl/">py3.6.5 opengl</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/18/%E5%A6%82%E4%BD%95%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95%EF%BC%88%E6%B3%A8%E9%94%80%EF%BC%89%E6%A0%A1%E5%9B%AD%E7%BD%91/">如何自动登录（注销）校园网</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/03/python_turtle%E6%B1%89%E5%8C%96/">python.turtle 汉化</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/16/%E5%9C%A8windows-2012-R2%E4%B8%8A-%E5%90%AF%E7%94%A8shadowssocks%E6%9C%8D%E5%8A%A1/">在windows 2012 R2上 启用shadowssocks服务</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
